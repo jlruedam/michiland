@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michiland</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div>
+            <h1>
+                Michiland
+            </h1>
+            <span id="msgError"></span>
+        </div>
+    </header>
+    
+    <main id="main">
+
+        <section  id="myMichis" class="seccion">
+            <h2>Mis michis</h2>
+            <div  id="seccionMyMichis" class="seccionFotos">
+               
+            </div>
+        </section>
+
+        <section id="uploadingMichi" class="seccion">
+            <h2>
+                Sube la foto de tu michi:
+            </h2>
+            <form id="uploadingForm">
+                <input type="file" id="file" name = "file"/>
+                <button type="button" onclick="uploadMichiPhoto()">Subir foto de michi</button>
+            </form>
+        </section>
+
+        <section id = "randomMichis" class="seccion">
+            <h2>Michis aleatorios</h2>
+            
+
+            <button id="btnLoadRandomMichis">Ver otros Michis...</button>
+
+            <div class="seccionFotos">
+                <figure>
+                    <img src="" alt="Foto gatitos aleatorios" id="imgGatito1">
+                    <figcaption><button id="btnGuardarMichi1">Guardar en favoritos</button></figcaption>
+                </figure>
+                    
+                <figure>
+                    <img src="" alt="Foto gatitos aleatorios" id="imgGatito2">
+                    <figcaption><button id="btnGuardarMichi2">Guardar en favoritos</button></figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="" alt="Foto gatitos aleatorios" id="imgGatito3">
+                    <figcaption><button id="btnGuardarMichi3">Guardar en favoritos</button></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="" alt="Foto gatitos aleatorios" id="imgGatito4">
+                    <figcaption><button id="btnGuardarMichi4">Guardar en favoritos</button></figcaption>
+                </figure>
+    
+            </div>
+            
+        </section>
+
+        
+
+        <section  id="favorites" class="seccion">
+            <h2>Michis favoritos</h2>
+            <div  id="seccionFotosFavoritos" class="seccionFotos">
+               
+            </div>
+        </section>
+
+
+        
+
+    </main>
+
+    <footer id="footer">
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
